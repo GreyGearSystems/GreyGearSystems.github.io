@@ -1,0 +1,543 @@
+/* Common */
+body{
+  font: 75% Arial;
+  background-color: white;
+  width: 100%;
+  margin: 0;
+}
+h1, h2, h3, h4, p, li{
+  color: gray;
+}
+h1, h2, h3{
+  text-align: center;
+}
+h1{
+  font-size: 2.1rem;
+    margin-top:40px;
+}
+h2{
+  font-size: 1.8rem;
+}
+h3{
+  font-size: 1.5rem;
+}
+h4{
+  font-size: 1.4rem;
+}
+p, li, th, td {
+  color:gray;
+  font-weight: normal;
+  font-size: 1.3rem;
+}
+section, footer{
+  padding: 20px 20%;
+  padding-bottom: 30px;
+}
+section.wide{
+  padding: 20px 10%;
+    padding-bottom: 30px;
+}
+
+
+/* Table */
+table, th, td {
+  border:1px solid gray;
+}
+table {
+    width:100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+    
+}
+th{
+    font-weight: bold;
+    background-color: #f2f2f2;
+}
+
+/* Navigation Bar */
+nav {
+    padding: 0 5%;
+    border-bottom:2px solid #f2f2f2;
+}
+nav div {
+    overflow:hidden;
+}
+nav div a {
+    float: left;
+    color: #a9a9a9;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 12px;
+    margin: 20px 0;
+    transition: background 0.25s, color 0.25s;
+}
+nav div a:hover {
+    background-color: #f2f2f2;
+    color: #808080;
+}
+nav div a.selected {
+    color: #808080;
+}
+nav div a.navLogo {
+    padding: 0px;
+    margin: 0;
+    margin-right: 10px;
+    height: 81px;
+}
+nav div a.navLogo img {
+    width: 300px;
+    height: 81px;
+}
+nav div .navIcon {
+    text-align: right;
+    display: none;
+    float: right;
+}
+nav div .dropdownHolder {
+    float: left;
+}
+nav div .dropdownHolder .dropdownOption {
+    background-color: inherit;
+    border: none;
+    text-decoration: none;
+    color: #a9a9a9;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 12px;
+    padding-bottom: 32px;
+    margin-top: 20px;
+    transition: background 0.25s, color 0.25s;
+}
+nav div .dropdownHolder:hover .dropdownOption {
+    background-color: #f2f2f2;
+    color: #808080;
+}
+nav div .dropdownHolder .subOptionHolder {
+    visibility:hidden;
+    position: absolute;
+    opacity: 0;
+    width: 92px;
+    z-index: 5;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.2);
+    transition: opacity 0.25s, visibility 0.2s;
+}
+nav div .dropdownHolder:hover .subOptionHolder {
+    visibility:visible;
+    opacity: 1;
+}
+nav div .dropdownHolder .subOption {
+    display: block;
+    float: none;
+    background-color: #f2f2f2;
+    color: #808080;
+    font-weight: initial;
+    padding: 12px;
+    margin: 0;
+}
+nav div .dropdownHolder .subOption:hover {
+    background-color: white;
+}
+
+/* Banner */
+section#indexBanner{
+  height: 800px;
+  padding: 0;
+}
+section#indexBanner h1{
+  position: absolute;
+  color: white;
+  text-align: left;
+  font-size: 3.2rem;
+  padding: 0 5%;
+  margin-top: 690px;
+}
+section#indexBanner img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+/* Product Info */
+section#productInfo {
+    height: 300px;
+    padding: 20px 15%;
+    
+}
+section#productInfo div.imageDivMobile{
+    display:none;
+}
+section#productInfo div.imageDivMobile div {
+    width:250px;
+    margin: 0 auto;
+}
+
+section#productInfo div.textDiv{
+    display: block;
+    float: left;
+    width: 58%;
+    padding: 50px 0;
+    padding-right: 2%;
+}
+section#productInfo div.textDiv p{
+    margin: 0;
+}
+section#productInfo div.imageDiv {
+    display: block;
+    float: left;
+    width: 30%;
+    padding: 50px 0;
+}
+section#productInfo div.imageDiv div{
+    width: 250px;
+    margin-left: auto;
+}
+
+/* Product Learning*/
+section#productLearning .multiCentredContainer a div{
+    transition: padding 0.5s;
+    margin: 0;
+}
+section#productLearning .multiCentredContainer a:hover div{
+    padding: 0 5px;
+}
+
+
+/* Footer */
+footer{
+  box-shadow: 0 100vh 0 100vh #2f2f2f;
+  text-align: center;
+}
+footer p.copyright{
+  font-size: 1rem;
+  margin-top: 40px;
+}
+
+
+
+/* Adhoc */
+.opaqueBG{
+  background-color: white;
+}
+.darkerOpaqueBG {
+    background-color: #f2f2f2;
+}
+.semiOpaqueBG{
+  background: rgba(255, 255, 255, 0.3);
+}
+.alignElements{
+  text-align: center;
+}
+.divider{
+  border-top-color: black;
+  border-top-width: thin;
+  border-top-style: solid;
+}
+
+/* Div Container */
+.centredContainer{
+    text-align: center;
+    margin: 0 auto;
+}
+.multiCentredContainer{
+    text-align: center;
+    margin: 0 auto;
+}
+.multiCentredContainer a{
+    text-decoration: none;
+}
+.multiCentredContainer a div{
+    display: inline-block;
+    vertical-align:top;
+    background-color: white;
+    border:2px solid #f2f2f2;
+    border-collapse: collapse;
+    text-decoration: none;
+    width:300px;
+    margin: 5px;
+    
+    transition: margin 0.5s;
+}
+.multiCentredContainer a div p{
+    margin: 0.5rem 0.5rem;
+}
+.multiCentredContainer a:hover div{
+    margin: 0 5px 10px 5px;
+}
+
+
+/* Text Button */
+.buttonText {
+    margin: 40px 20px;
+    text-align: center;
+}
+.buttonText a {
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 12px;
+    transition: background 0.5s, padding 0.5s, border-radius 0.5s;
+}
+.buttonText a:hover {
+    background-color: #30bbff;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+
+/* Div Button */
+.buttonDivContainer{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  width: 140px;
+  height: 140px;
+}
+.buttonDivContainer div{
+  position: absolute;
+  background-color:#4a9bf0;
+  border-radius: 4px;
+  padding: 10px;
+  transition: background 0.5s, padding 0.5s, border-radius 0.5s;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.buttonDivContainer div:hover{
+  background-color:#30bbff;
+  padding: 12px;
+  border-radius: 5px;
+}
+
+
+/* Adjacent Page Link */
+.adjacentPageLinkContainer{
+    position: relative;
+}
+.adjacentPageLinkContainer a{
+    position: absolute;
+    text-decoration: none;
+}
+.adjacentPageLinkContainer a p{
+    font-weight: bold;
+  font-size: 1.5rem;
+    margin: 0 0 0 0;
+    transition: color 0.5s;
+}
+.adjacentPageLinkContainer a:hover p{
+    color: #3030a0;
+}
+
+
+/* Video Container */
+.videoContainer{
+  width: 100%;
+}
+.videoContainer div{
+    width:800px;
+    height:450px;
+    margin: 0 auto;
+}
+.videoContainer div iframe{
+  width: 100%;
+  height: 100%;
+}
+
+
+/* MEDIA QUERIES Width */
+@media (max-width: 1000px){
+    section, footer{
+         padding: 20px 10%;  
+    }
+    section#indexBanner h1{
+        font-size: 3.2rem;
+        margin-top: 650px;
+    }
+    section#productInfo {
+        padding: 20px 10%;
+    }
+    .videoContainer div{
+        width:600px;
+        height:338px;
+    }
+}
+
+@media (max-width: 950px) {
+    section#productInfo div.textDiv {
+        width: 58%;
+        padding-right: 4%;
+    }
+    section#productInfo div.imageDiv {
+        width: 38%;
+    }
+}
+
+@media (max-width: 775px) {
+    nav div .option {
+        display: none;
+        float: none;
+        padding: 12px;
+        margin: 0;
+    }
+    nav div .navIcon {
+        display: block;
+    }
+    nav div .dropdownHolder {
+        display: none;
+        float: none;
+        padding: 0;
+        margin: 0;
+    }
+    nav div .dropdownHolder .dropdownOption {
+        padding: 12px;
+        margin: 0;
+    }
+    nav div .dropdownHolder .subOptionHolder {
+        width: 100%;
+    }
+    nav .dropdownEnabled{
+        padding-bottom: 20px; 
+    }
+    nav .dropdownEnabled .option {
+        display: block;
+    }
+    nav .dropdownEnabled .navIconHolder a {
+        background-color: #f2f2f2;
+    }
+    nav .dropdownEnabled .dropdownHolder {
+        display: block;
+        float: none;
+    }
+    nav .dropdownEnabled .dropdownHolder .dropdownOption {
+        display: block;
+        float: none;
+        width: 100%;
+        text-align: left;
+    }
+    nav .dropdownEnabled .dropdownHolder .subOptionHolder {
+        display: none;
+        position: relative;
+        padding-left: 20px;
+        background-color: #fafafa;
+    
+    }
+    nav .dropdownEnabled .dropdownHolder:hover .subOptionHolder {
+        display: block;
+    }
+    nav .dropdownEnabled .dropdownHolder .subOption {
+        background-color: #fafafa;
+    }
+    nav .dropdownEnabled .dropdownHolder .subOption:hover {
+        background-color: #f2f2f2;
+        color: #808080;
+    }
+}
+
+
+@media (max-width: 750px) {
+    section#productInfo div.textDiv div {
+        margin: 40px 0;
+    }
+    section#productInfo div.imageDiv div{
+        width: 200px;
+        height: 133px;
+    }
+    section#productInfo div.imageDiv div img{
+        width: 200px;
+        height: 133px;
+    }
+    
+    .videoContainer div{
+        width:400px;
+        height:225px;
+    }
+}
+    
+
+
+@media (max-width: 600px) {
+    html {
+        font-size: 0.8rem;
+    }
+    section#indexBanner h1 {
+        font-size: 3.0rem;
+        margin-top: 600px;
+    }
+
+    section#productInfo div.imageDivMobile {
+        display: block;
+    }
+
+    section#productInfo div.textDiv {
+        width: 100%;
+        padding: 25px 0 0 0;
+        float: none;
+        
+    }
+    section#productInfo div.imageDiv {
+        display: none;
+    }
+    section#productInfo {
+        height:auto;
+    }
+    
+}
+@media (max-width: 500px) {
+    nav div a.navLogo {
+        height: 54px;
+        margin-top:15px;
+    }
+    nav div a.navLogo img {
+        width: 200px;
+        height: 54px;
+    }
+    .videoContainer div{
+        width:300px;
+        height:169px;
+    }
+    
+}
+@media (max-width: 400px) {
+    section#indexBanner h1 {
+        font-size: 3.0rem;
+        margin-top: 590px;
+    }
+}
+
+/* MEDIA QUERIES Height */
+@media (max-height: 1000px) {
+    section#indexBanner {
+        height: 600px;
+    }
+    section#indexBanner h1 {
+        margin-top: 420px;
+    }
+}
+
+@media (max-height: 800px) {
+    section#indexBanner {
+        height: 400px;
+    }
+    section#indexBanner h1 {
+        font-size: 2.5rem;
+        margin-top: 280px;
+    }
+}
+
+@media (max-height: 600px) {
+    section#indexBanner {
+        height: 250px;
+    }
+    section#indexBanner h1 {
+        margin-top: 100px;
+    }
+}

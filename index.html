@@ -1,0 +1,126 @@
+﻿<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>GG Systems</title>
+    <link rel="stylesheet" href="ggsStyle.css">
+  </head>
+  <body>
+      <header>
+          <nav class="opaqueBG">
+              <div class="navDiv" id="navDivID">
+                  <a href="index.html" class="navLogo">
+                      <img src="Logo.png" height="163" width="600">
+                  </a>
+                  <div class="navIconHolder">
+                      <a href="javascript:void(0);" class="navIcon" onclick="NavIconDropdownToggle()">
+                          <img src="MobileNavIcon.png" height="25" width="25">
+                      </a>
+                  </div>
+                  <a href="index.html" class="option selected">Home</a>
+                  <a href="#productInfo" class="option">Products</a>
+                  <div class="dropdownHolder">
+                      <button class="dropdownOption">
+                          Learning
+                      </button>
+                      <div class="subOptionHolder">
+                          <a href="https://www.youtube.com/channel/UCncHznGzbN16UmdKXJY6u5g" target="_blank" class="subOption">Tutorials</a>
+                          <a href="GG%20FPS%20Integration%20Tool%20(1.1)%20Documentation.pdf" target="_blank" class="subOption">Manual</a>
+                      </div>
+                  </div>
+                  <a href="ContactUs.html" class="option">Contact Us</a>
+              </div>
+          </nav>
+          <section id="indexBanner">
+              <h1>Enhancing <wbr>FPS <wbr>Capabilities <wbr>for <wbr>Unity</h1>
+              <img src="Scene.png" height="1080" width="1920">
+          </section>
+      </header>
+      <main>
+          <section class="intro opaqueBG">
+              <p>
+                  Our aim is to improve First Person Shooter game development on the Unity engine application.
+              <p />
+              <p>
+                  We have released our Tool to help you with that...
+              <p />
+          </section>
+          <section id="productDemo" class="darkerOpaqueBG wide">
+              <h1>FPS Integration Tool</h1>
+              <div class="videoContainer">
+                  <div>
+                    <iframe width="800" height="450" src="https://www.youtube.com/embed/lyA2e5xPML4?autoplay=1&mute=1&playlist=lyA2e5xPML4&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+                  </div>
+              </div>
+          </section>
+          <section id="productInfo" class="opaqueBG">
+              <div class="imageDivMobile">
+                  <div>
+                      <a href="https://assetstore.unity.com/packages/slug/190354" target="_blank">
+                          <img src="FPS%20Tool%20Image.png" height="166" width="250">
+                      </a>
+                  </div>
+              </div>
+                <div class="textDiv">
+                    <p>
+                        Enables users to integrate FPS systems and mechanics into Unity projects quickly and intuitively.
+                    </p>
+                    <div class="buttonText">
+                        <a href="https://assetstore.unity.com/packages/slug/190354" target="_blank">Download - Unity Asset Store</a>
+                    </div>
+                </div>
+                <div class="imageDiv">
+                    <div>
+                        <a href="https://assetstore.unity.com/packages/slug/190354" target="_blank">
+                            <img src="FPS%20Tool%20Image.png" height="166" width="250">
+                        </a>
+                    </div>
+                </div>
+          </section>
+          <section id="productLearning" class="darkerOpaqueBG wide" style="text-align: center;">
+              <h2>User Learning</h2>
+              <p>Learn to make the most of the tool. Designed for all users!</p>
+              <div class="multiCentredContainer">
+                  <a href="https://www.youtube.com/channel/UCncHznGzbN16UmdKXJY6u5g" target="_blank">
+                      <div>
+                          <img src="GraduationCap.png" height="200" width="200">
+                          <h4 style="margin: 15px 0 15px 0">Tutorials</h4>
+                          <p style="height:75px">Easy step-by-step video tutorials all in one place</p>
+                      </div>
+                  </a>
+                  <!--<a href="Manual.html">-->
+                  <a href="GG%20FPS%20Integration%20Tool%20(1.1)%20Documentation.pdf" target="_blank">
+                      <div>
+                        <img src="Book.png" height="200" width="200">
+                        <h4 style="margin: 15px 0 15px 0">Manual</h4>
+                        <p style="height:75px">PDF documentation with detailed explanations</p>
+                      </div>
+                  </a>
+              </div>
+          </section>
+          <section class="opaqueBG" style="text-align: center;">
+              <h2>We wish you luck!</h2>
+              <p>Game development is extremely hard to grasp as a beginner. We hope our tool can assist you on your journey to mastering this exciting activity and skill.</p>
+          </section>
+      </main>
+      <footer class="opaqueBG">
+        <p class="copyright">PierreWare Limited © 2021</p>
+      </footer>
+    <script>
+        function NavIconDropdownToggle() {
+            var x = document.getElementById("navDivID");
+            if (x.className === "navDiv") 
+            {
+                x.className += " dropdownEnabled";
+            } 
+            else 
+            {
+                x.className = "navDiv";
+            }
+        }
+    </script>
+
+  </body>
+</html>
