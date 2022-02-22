@@ -292,6 +292,10 @@ footer p.copyright{
     padding: 12px;
     border-radius: 5px;
 }
+.buttonText a#discord:not(:hover){
+  background-color: #5865f2;
+}
+
 
 
 /* Div Button */
