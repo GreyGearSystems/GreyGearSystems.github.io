@@ -1,0 +1,97 @@
+﻿<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Manuals - GG Systems</title>
+    <link rel="stylesheet" href="ggsStyle.css">
+  </head>
+  <body>
+      <header>
+          <nav class="opaqueBG">
+              <div class="navDiv" id="navDivID">
+                  <a href="index.html" class="navLogo">
+                      <img src="Logo.png" height="163" width="600">
+                  </a>
+                  <div class="navIconHolder">
+                      <a href="javascript:void(0);" class="navIcon" onclick="NavIconDropdownToggle()">
+                          <img src="MobileNavIcon.png" height="25" width="25">
+                      </a>
+                  </div>
+                  <a href="index.html" class="option">Home</a>
+                  <a href="#productInfo" class="option">Products</a>
+                  <div class="dropdownHolder">
+                      <button class="dropdownOption">
+                          Learning
+                      </button>
+                      <div class="subOptionHolder">
+                          <a href="https://www.youtube.com/channel/UCncHznGzbN16UmdKXJY6u5g" target="_blank" class="subOption">Tutorials</a>
+                          <a href="Manuals.html" class="subOption selected">Manual</a>
+                      </div>
+                  </div>
+                  <a href="ContactUs.html" class="option">Contact Us</a>
+              </div>
+          </nav>
+      </header>
+      <main>
+          <section class="intro darkerOpaqueBG" style="text-align: center;">
+              <h1>User Manuals</h1>
+              <p>
+                Access our published user manuals.
+              <p/>
+              <p>
+                The latest editions are available for each product and version.
+              <p/>
+          </section>
+          <section class="opaqueBG">
+            <h2>FPS Integration Tool Pro</h2>
+            <div class="horizontalContainer" style="height: 200px">
+              <div class="imageDiv">
+                <img src="FPSToolProImage.png" height="166" width="250">
+              </div>
+              <div class="textDiv">
+                <a class="standardLink" href="Manuals/ManualFPSInteToolPro(V1.0)(E1).pdf" target="_blank">
+                  <p>Version 1.0</p>
+                </a>
+              </div>
+            </div>
+          </section>
+          <section class="darkerOpaqueBG">
+            <h2>FPS Integration Tool (Free)</h2>
+            <div class="horizontalContainer" style="height: 200px">
+              <div class="imageDiv">
+                <img src="FPSToolImage.png" height="166" width="250">
+              </div>
+              <div class="textDiv">
+                <a class="standardLink" href="Manuals/ManualFPSInteToolFree(V1.2)(E2).pdf" target="_blank">
+                  <p>Version 1.2</p>
+                </a>
+                <a class="standardLink" href="Manuals/ManualFPSInteToolFree(V1.1)(E1).pdf" target="_blank">
+                  <p>Version 1.1</p>
+                </a>
+                <a class="standardLink" href="Manuals/ManualFPSInteToolFree(V1.0)(E1).pdf" target="_blank">
+                  <p>Version 1.0</p>
+                </a>
+              </div>
+            </div>
+          </section>
+      </main>
+      <footer class="opaqueBG">
+        <p class="copyright">PierreWare Limited © 2021</p>
+      </footer>
+    <script>
+        function NavIconDropdownToggle() {
+            var x = document.getElementById("navDivID");
+            if (x.className === "navDiv") 
+            {
+                x.className += " dropdownEnabled";
+            } 
+            else 
+            {
+                x.className = "navDiv";
+            }
+        }
+    </script>
+
+  </body>
+</html>

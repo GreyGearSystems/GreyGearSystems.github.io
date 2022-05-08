@@ -292,10 +292,6 @@ footer p.copyright{
     padding: 12px;
     border-radius: 5px;
 }
-.buttonText a#discord:not(:hover){
-  background-color: #5865f2;
-}
-
 
 
 /* Div Button */
@@ -356,23 +352,71 @@ footer p.copyright{
   height: 100%;
 }
 
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+
+.horizontalContainer div.imageDiv{
+  display: block;
+  float: left;
+  text-align: center;
+  width: 50%;
+  
+}
+.horizontalContainer div.imageDiv img{
+  margin: 25px auto;
+}
+
+.horizontalContainer div.textDiv{
+  display: block;
+  float: left;
+  text-align: center;
+  width: 50%;
+}
+
+
+
+
+
+a.standardLink {
+  text-decoration-color: blue;
+  transition: text-decoration-color 0.5s;
+}
+a.standardLink:hover{
+  text-decoration-color: deepskyblue;
+}
+a.standardLink p{
+  color: blue;
+  transition: color 0.5s;
+}
+a.standardLink:hover p{
+  color: deepskyblue;
+}
+
+
+
+
+
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 
 /* MEDIA QUERIES Width */
 @media (max-width: 1000px){
-    section, footer{
-         padding: 20px 10%;  
-    }
-    section#indexBanner h1{
-        font-size: 3.2rem;
-        margin-top: 650px;
-    }
-    section#productInfo {
-        padding: 20px 10%;
-    }
-    .videoContainer div{
-        width:600px;
-        height:338px;
-    }
+  section, footer{
+       padding: 20px 10%;  
+  }
+  section#indexBanner h1{
+      font-size: 3.2rem;
+      margin-top: 650px;
+  }
+  section#productInfo {
+      padding: 20px 10%;
+  }
+  .videoContainer div{
+      width:600px;
+      height:338px;
+  }
+
+  
 }
 
 @media (max-width: 950px) {
@@ -444,11 +488,13 @@ footer p.copyright{
         background-color: #f2f2f2;
         color: #808080;
     }
+    
 }
 
 
 @media (max-width: 750px) {
-    section#productInfo div.textDiv div {
+    section#productInfo div.textDiv div
+    {
         margin: 40px 0;
     }
     section#productInfo div.imageDiv div{
@@ -459,11 +505,20 @@ footer p.copyright{
         width: 200px;
         height: 133px;
     }
-    
     .videoContainer div{
         width:400px;
         height:225px;
     }
+    .horizontalContainer div.imageDiv{
+      text-align: left;
+      width: 40%;
+    }
+    .horizontalContainer div.imageDiv img{
+      width: 200px;
+      height: 133px;
+    }
+  
+    
 }
     
 
@@ -487,11 +542,21 @@ footer p.copyright{
         float: none;
         
     }
-    section#productInfo div.imageDiv {
+    section#productInfo div.imageDiv 
+    {
         display: none;
     }
     section#productInfo {
         height:auto;
+    }
+  
+  
+  
+    .horizontalContainer div.imageDiv{
+      display: none;
+    }
+    .horizontalContainer div.textDiv{
+      width: 100%;
     }
     
 }
