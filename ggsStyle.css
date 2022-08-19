@@ -482,7 +482,6 @@ a.standardLink:hover p{
         background-color: #f2f2f2;
         color: #808080;
     }
-    
 }
 
 
@@ -514,44 +513,41 @@ a.standardLink:hover p{
   
     
 }
-    
-
 
 @media (max-width: 600px) {
-    html {
-        font-size: 0.8rem;
-    }
-    section#indexBanner h1 {
-        font-size: 3.0rem;
-        margin-top: 600px;
-    }
+  html {
+      font-size: 0.8rem;
+  }
+  section#indexBanner h1 {
+      font-size: 3.0rem;
+      margin-top: 600px;
+  }
 
-    section#productInfo div.imageDivMobile {
-        display: block;
-    }
+  section#productInfo div.imageDivMobile {
+      display: block;
+  }
 
-    section#productInfo div.textDiv {
-        width: 100%;
-        padding: 25px 0 0 0;
-        float: none;
-        
-    }
-    section#productInfo div.imageDiv 
-    {
-        display: none;
-    }
-    section#productInfo {
-        height:auto;
-    }
-  
-  
-  
-    .horizontalContainer div.imageDiv{
-      display: none;
-    }
-    .horizontalContainer div.textDiv{
+  section#productInfo div.textDiv {
       width: 100%;
-    }
+      padding: 25px 0 0 0;
+      float: none;
+  }
+  section#productInfo div.imageDiv 
+  {
+      display: none;
+  }
+  section#productInfo {
+      height:auto;
+  }
+  .horizontalContainer div.imageDiv{
+    display: none;
+  }
+  .horizontalContainer div.textDiv{
+    width: 100%;
+  }
+  section#productInfo div.textDiv #midButton{
+    margin-bottom: 80px;
+  }
     
 }
 @media (max-width: 500px) {
@@ -567,7 +563,6 @@ a.standardLink:hover p{
         width:300px;
         height:169px;
     }
-    
 }
 @media (max-width: 400px) {
     section#indexBanner h1 {
